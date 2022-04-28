@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.Ctrl_pendu">
+   <children>
+      <Text fx:id="mot_cache" layoutX="200.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="obj.getMotCache()" wrappingWidth="200.18603515625">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="41.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vies restantes : " />
+      <Text fx:id="erreur_text" layoutX="165.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7 - obj.GetNbErreurs ()" />
+      <Text layoutX="38.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lettres utilisées :" />
+      <Text fx:id="lettrejoue_text" layoutX="165.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="obj.GetListeLettre()" />
+      <Button fx:id="btn_quitter" layoutX="7.0" layoutY="2.0" mnemonicParsing="false" onAction="#Quitter" text="Retour" />
+      <Button fx:id="btn_rejouer" layoutX="525.0" layoutY="2.0" mnemonicParsing="false" onAction="#Rejouer" text="Rejouer" />
+      <GridPane layoutX="29.0" layoutY="132.0" prefHeight="93.0" prefWidth="543.0" style="-fx-border-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn_n" mnemonicParsing="false" onAction="#action_n" text="N" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_o" mnemonicParsing="false" onAction="#action_o" text="O" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_p" mnemonicParsing="false" onAction="#action_p" text="P" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btn_q" mnemonicParsing="false" onAction="#action_q" text="Q" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_r" mnemonicParsing="false" onAction="#action_r" text="R" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_s" mnemonicParsing="false" onAction="#action_s" text="S" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_t" mnemonicParsing="false" onAction="#action_t" text="T" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_u" mnemonicParsing="false" onAction="#action_u" text="U" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_v" mnemonicParsing="false" onAction="#action_v" text="V" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_w" mnemonicParsing="false" onAction="#action_w" text="W" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_x" mnemonicParsing="false" onAction="#action_x" text="X" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_y" mnemonicParsing="false" onAction="#action_y" text="Y" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_z" mnemonicParsing="false" onAction="#action_z" text="Z" GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btn_a" alignment="CENTER" mnemonicParsing="false" onAction="#action_a" text="A" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="btn_b" mnemonicParsing="false" onAction="#action_b" text="B" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_c" mnemonicParsing="false" onAction="#action_c" text="C" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_d" mnemonicParsing="false" onAction="#action_d" text="D" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_e" mnemonicParsing="false" onAction="#action_e" text="E" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_f" mnemonicParsing="false" onAction="#action_f" text="F" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_g" mnemonicParsing="false" onAction="#action_g" text="G" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_h" mnemonicParsing="false" onAction="#action_h" text="H" GridPane.columnIndex="7" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_i" mnemonicParsing="false" onAction="#action_i" text="I" GridPane.columnIndex="8" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_j" mnemonicParsing="false" onAction="#action_j" text="J" GridPane.columnIndex="9" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_k" mnemonicParsing="false" onAction="#action_k" text="K" GridPane.columnIndex="10" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_l" mnemonicParsing="false" onAction="#action_l" text="L" GridPane.columnIndex="11" GridPane.halignment="CENTER" />
+            <Button fx:id="btn_m" mnemonicParsing="false" onAction="#action_m" text="M" GridPane.columnIndex="12" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+      <Text layoutX="196.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeu du Pendu" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      
+   </children>
+</AnchorPane>
